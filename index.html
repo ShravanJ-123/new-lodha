@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/intlTelInput.css">
+    <link rel="stylesheet" href="css/slide-to-submit.css">
     <style>
         
  .iti{width: 100%;}
@@ -781,11 +782,16 @@
 
     <!-- mobile section -->
     <div class="mobile-section">
-        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" class="btn" title="Enquire Now"> Enquire Now</a>
-            <!-- <a href="tel:+91-8884900447" class="btn">+91 8884900447</a> -->
-            <!-- <a href="tel:+91-8884900447" class="btn">Tap To Call</a> -->
-        <a href="https://api.whatsapp.com/send?phone=+918624916245 &text=Hello, Looking for Lodha Wakad, Pune. Get in touch with me my name is" class="btn"> Whats App</a>
-        
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" class="btn enquire-btn" title="Enquire Now">
+        <img src="images/mail.png" alt="Mail Icon" class="enquire-icon">
+        Enquire Now
+    </a>
+
+
+        <a href="https://api.whatsapp.com/send?phone=+919958845444&text=Hello, Looking for Lodha Wakad, Pune. Get in touch with me my name is" class="btn whatsapp-btn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+            WhatsApp
+        </a>
     </div>
 
     <!-- Modal -->
@@ -793,38 +799,60 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Lodha Wakad</h3>
+                    <h3 class="modal-title" id="exampleModalLabel">Enquire Now</h3>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
                 </div>
                 <div class="modal-body">
+                    <p class="text-center modal-title-p">Register Here And Avail The Best Offers!!</p>
                     <div class="form_section">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Name" name="name" id="qSenderName1">
+                            <input type="text" class="form-control form-control-modal" placeholder="Name" name="name" id="qSenderName1">
                         </div>
 
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Enter Email" name="email" id="qEmailID1">
+                            
+                            <div class="input-group">
+                                <span class="input-group-text input-group-text-num">
+                                    <img src="https://flagcdn.com/w40/in.png" class="input-group-text-img" width="20" alt="India Flag">
+                                    +91
+                                </span>
+                                <input type="tel" class="form-control form-control-modal " placeholder="81234 56789" name="number" id="qMobileNo1">
+                            </div>
                         </div>
 
                         <div class="form-group">
-                            <input class="form-control phone-input" placeholder="Enter Number" name="number" id="qMobileNo1">
+                            
+                            <input type="email" class="form-control form-control-modal " placeholder="Email" name="email" id="qEmailID1">
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter Message" name="number" id="qMessage1">
-                        </div>
-                        <button class="btn dark_btn rounded submit_btn main_button" id="SubmitQuery1">Submit Now
-                        </button>
+                        <p class="text-center small">
+                            This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+                        </p>
 
-                        <div class="inp-box">
-                            <input type="checkbox" checked="">
-                            <p class="inp-txt" style="margin-left: 5px; color: #000;"> I authorize company representatives to Call,
-                                SMS, Email or WhatsApp me about its products and offers. This consent overrides any
-                                registration for DNC/NDNC.</p>
-                        </div>
+                        <button class="btn btn-block" style="background-color: #a58d4a; color: white;" id="SubmitQuery1">Enquire Now</button>
+                        <div class="text-center mt-3">
+                            <p>or</p>
+                                <a class="whats-pt0 countWhatsApp zoomIn" id="whatsappClick" 
+                                href="https://wa.me/+918624916245?text=I’m interested in the Lodha Adrina project. Please send brochure and price details." 
+                                target="_blank">
+                                    <div class="enquireNowBtn desktop-view" style="background: linear-gradient(195deg, #53d161, #23b73c);padding: 9.3px 30px;">
+                                        <img loading="lazy" alt="Lodha Adrina" src="images/whatapps-ico.png" id="blink-text" 
+                                            class="img-responsive center-block whatsapp-img">
+                                        Connect On WhatsApp
+                                    </div>
+                                </a>
 
+                                <div class="slide-submit poppins-regular mobile-view">
+                                    <button class="poppins-regular" id="slideContainer">
+                                        <img loading="lazy" alt="Lodha Adrina" src="images/swipe-arrow.png" id="slideIcon">
+                                    </button>
+                                    <label id="slideText">Slide to connect on WhatsApp</label>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

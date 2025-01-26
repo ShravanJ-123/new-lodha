@@ -5562,6 +5562,8 @@
     z-index: 1050;
     display: none;
     width: 100%;
+    backdrop-filter: blur(2px);
+    background-blend-mode: saturation;
     height: 100%;
     overflow: hidden;
     outline: 0;
@@ -5645,10 +5647,10 @@
     flex-direction: column;
     width: 100%;
     pointer-events: auto;
-    background-color: #fff;
+    background-color: #f2ece4;
     background-clip: padding-box;
     border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 0.3rem;
+    border-radius: 0.7rem;
     outline: 0;
   }
   .modal-backdrop {
@@ -5667,14 +5669,11 @@
     opacity: 0.5;
   }
   .modal-header {
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-align: start;
-    align-items: flex-start;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: 1rem 1rem;
-    border-bottom: 1px solid #dee2e6;
+    align-items: center;
+    justify-content: space-between; /* Ensures spacing between title and close button */
+    width: 100%; /* Ensures full width for proper alignment */
+    padding: 1rem 1rem 0rem 1rem;
     border-top-left-radius: calc(0.3rem - 1px);
     border-top-right-radius: calc(0.3rem - 1px);
   }
@@ -5683,14 +5682,80 @@
     margin: -1rem -1rem -1rem auto;
   }
   .modal-title {
-    margin-bottom: 0;
-    line-height: 1.5;
+    margin: 0 auto; /* Centers the title within the available space */
+    text-align: center;
+    color: #dea946;
+    font-size: 2rem;
+    font-weight: 600;
+    flex-grow: 1; /* Allows title to take available space and center itself */
   }
+ 
   .modal-body {
     position: relative;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+  }
+  .modal-title-p{
+    padding: 0rem 0rem 0.5rem 0rem;
+  }
+  .form-control-modal {
+    border: none;  /* Remove all borders */
+    background-color: transparent;
+    border-bottom: 2px solid #ccc;  /* Add bottom border */
+    border-radius: 0;  /* Remove border radius for a flat look */
+    outline: none;  /* Remove outline when focused */
+    box-shadow: none;  /* Prevent any shadow effects */
+  }
+  .form-control-modal::placeholder {
+    color: gray !important;
+    /* font-size: ; */
+    opacity: 1; /* Ensure visibility in some browsers */
+  }
+
+  /* Vendor prefixes for better browser support */
+  .form-control-modal::-webkit-input-placeholder {
+      color: gray;
+  }
+  .form-control-modal:-moz-placeholder {
+      color: gray;
+  }
+  .form-control-modal::-moz-placeholder {
+      color: gray;
+  }
+  .form-control-modal:-ms-input-placeholder {
+      color: gray;
+  }
+
+  .input-group-text-num{
+    border: none;  /* Remove border */
+    border-bottom: 2px solid #ccc;
+    border-radius: 0px;
+    background: transparent;  /* Optional: remove background if needed */
+    padding: 0;  /* Remove padding if necessary */
+  }
+  .input-group-text-img {
+    border: none;  /* Remove border */
+    outline: none;  /* Remove outline */
+    box-shadow: none;  /* Remove any shadow effect */
+  }
+  .whatsapp-btn-form {
+    display:flex;
+    justify-content: center;
+    background-color: #25d366;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+  }
+
+  .whatsapp-btn-form:hover {
+      background-color: #1da851;
   }
   .modal-footer {
     display: -ms-flexbox;
