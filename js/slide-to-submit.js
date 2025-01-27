@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check if the button has crossed halfway
         if (currentX > parentWidth / 2) {
             // Redirect to WhatsApp
-            window.location.href = "https://wa.me/+918624916245?text=I’m+interested+in+Lodha+Adrina+project.+Please+send+brochure+and+price+details.";
+            window.location.href = "https://wa.me/+918624916245?text=I’m+interested+in+Lodha+Wakad+project.+Please+send+brochure+and+price+details.";
 
             // Reset position after triggering
             slideButton.style.transform = "translateX(0)";
@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Check if the button has crossed halfway
         if (currentX > parentWidth / 2) {
             // Redirect to WhatsApp
-            window.location.href = "https://wa.me/+918624916245?text=I’m+interested+in+Lodha+Adrina+project.+Please+send+brochure+and+price+details.";
+            window.location.href = "https://wa.me/+918624916245?text=I’m+interested+in+Lodha+Wakad+project.+Please+send+brochure+and+price+details.";
 
             // Reset position after triggering
             slideButton.style.transform = "translateX(0)";
