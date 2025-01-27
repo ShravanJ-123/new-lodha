@@ -463,19 +463,19 @@ button.btn.main_button {
   background-color: #f8f8f8;
   z-index: 1;
 }
-.highlight_section ul {
+.overview ul {
   padding: 0;
   list-style: none;
   margin: 0;
 }
-.highlight_section ul li {
+.overview ul li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
 }
-.highlight_section span.number {
+.overview span.number {
   box-shadow: #e2e2e3 0 0 0 5px inset;
-  font-size: 30px;
+  font-size: 18px;
   font-weight: 700;
   color: #212529;
   display: inline-block;
@@ -483,19 +483,20 @@ button.btn.main_button {
   border-radius: 3px; /* width:70px; */ /* height:70px; */ /* line-height:70px; */
   padding: 10px 16px; /* margin-left: 10px; */ /* margin-right: 10px; */
 }
-.highlight_section .highlight_point {
+.overview .highlight_point {
   padding-left: 8px;
+  color: #212529;
 }
-.highlight_section .content_section ul {
+.overview .content_section ul {
   padding: 0;
   margin: 0;
   list-style: none;
   margin-top: 30px;
 }
-.highlight_section .row {
+.overview .row {
   align-items: center;
 }
-.highlight_section::after {
+.overview::after {
   content: attr(data-name);
   font-size: 80px;
   position: absolute;
@@ -1207,8 +1208,8 @@ footer .inner-footer-bottom p a {
   .amenities_section .amenities_wrapper .title {
     padding: 20px;
   }
-  .highlight_section span.number {
-    font-size: 25px; /* width:60px; */ /* height:60px; */ /* line-height:60px; */
+  .overview span.number {
+    font-size: 17px; /* width:60px; */ /* height:60px; */ /* line-height:60px; */
   }
   .banner_section h2.form_title {
     font-size: 28px;
@@ -1298,8 +1299,8 @@ footer .inner-footer-bottom p a {
     left: 0;
     content: none;
   }
-  .highlight_section span.number {
-    font-size: 20px; /* width:68px; */ /* height:50px; */ /* line-height:50px; */
+  .overview span.number {
+    font-size: 16px; /* width:68px; */ /* height:50px; */ /* line-height:50px; */
   }
   .amenities_section::after {
     font-size: 40px;
@@ -1549,7 +1550,7 @@ footer .inner-footer-bottom p a {
     text-align: justify;
   }
   .ptb {
-    padding: 50px 0;
+    /* padding: 50px 0; */
   }
   .banner_section .bottom_content .item .inner {
     border-radius: 0;
