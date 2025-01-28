@@ -658,9 +658,12 @@ ul.slick-dots li.slick-active button:before {
   font-size: 22px;
   font-weight: 500;
 }
+
 .price_section .price_inner {
   margin-top: 40px;
+  row-gap: 20px; 
 }
+
 .price_section .item_wrap .title h3 {
   background: var(--primary-color);
   color: #fbe486;
@@ -681,6 +684,8 @@ ul.slick-dots li.slick-active button:before {
 }
 .price_section .price_inner .col-lg-4 {
   margin-bottom: 15px;
+  row-gap: 20px; 
+
 }
 .price_section {
   position: relative;
