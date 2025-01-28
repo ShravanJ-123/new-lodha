@@ -1289,6 +1289,13 @@ footer .inner-footer-bottom p a {
     display: flex;
     justify-content: space-between;
     text-align: center;
+    transform: translateY(100px); /* Start position (hidden below) */
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth animation */
+    opacity: 0; /* Initially invisible */
+  }
+  .mobile-section.visible {
+    transform: translateY(0); /* Slide up into view */
+    opacity: 1; /* Fully visible */
   }
   .overview::after {
     font-size: 40px;
