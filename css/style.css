@@ -1580,9 +1580,9 @@ footer .inner-footer-bottom p a {
   }
 
   .enquire-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-right: 0.2rem; */
   }
   .whatsapp-btn:hover {
     background-color: #1ebe57;
@@ -1594,9 +1594,9 @@ footer .inner-footer-bottom p a {
   }
 
   .whatsapp-icon {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 1.5rem;
+    height: 1.5rem;
+    /* margin-right: 0.2rem; */
   }
 }
 /* Hide slider on desktop, show WhatsApp button */
@@ -1635,13 +1635,6 @@ footer .inner-footer-bottom p a {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Icon styling
-.enquire-icon, .whatsapp-icon {
-  width: 24px;
-  height: 24px;
-} */
-
-/* Responsive adjustments */
 .bg-animation {
   font-size: 14px;
   padding: 8px 20px;
