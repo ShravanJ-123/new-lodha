@@ -238,7 +238,7 @@ header.fixed-header .navbar-nav .nav-link {
   font-size: 30px;
 }
 .banner_section ul.key_high {
-  margin: 15px 0 0;
+  /* margin: 15px 0 0; */
   padding: 10px 0 0;
 }
 .banner_section ul.key_high li {
@@ -1139,7 +1139,7 @@ body {
 .mobile-section {
   position: fixed;
   bottom: 0;
-  background-color: var(--primary-color);
+  /* background-color: var(--primary-color); */
   color: #fff;
   z-index: 99;
   width: 100%;
@@ -1524,7 +1524,7 @@ footer .inner-footer-bottom p a {
     margin: unset;
     margin-bottom: 7px;
     border: none;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 2px solid #ccc;
   }
   .banner_section .bottom_content .item_box {
     padding: 10px;
@@ -1637,5 +1637,5 @@ footer .inner-footer-bottom p a {
 
 .bg-animation {
   font-size: 14px;
-  padding: 8px 20px;
+  /* padding: 8px 20px; */
 }
