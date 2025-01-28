@@ -1194,6 +1194,30 @@
                 });
         }
     </script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const rightForm = document.querySelector(".right_form");
+            const mobileSection = document.querySelector(".mobile-section");
+          
+            const handleScroll = () => {
+              if (!rightForm) return;
+          
+              const rightFormTop = rightForm.getBoundingClientRect().top;
+              const windowHeight = window.innerHeight;
+          
+              // Check if the `.right_form` is visible in the viewport
+              if (rightFormTop < windowHeight - 40) { // Adjust the threshold as needed
+                mobileSection.classList.add("visible");
+              } else {
+                mobileSection.classList.remove("visible");
+              }
+            };
+          
+            window.addEventListener("scroll", handleScroll);
+          });
+          
+    </script>
 
 </body>
 </html>
