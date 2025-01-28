@@ -260,13 +260,16 @@ header.fixed-header .navbar-nav .nav-link {
 .banner_btn button {
   padding: 13px 30px;
   border: none;
-  background-color: #000;
+  /* background-color: #000; */
   color: #fff; /* text-transform:uppercase; */
   letter-spacing: 1px;
   font-size: 18px;
   position: relative;
   border-radius: 10px;
   backdrop-filter: blur(25px);
+  background: linear-gradient(-45deg, #0c3730, #015874, #3a500a, #0c3730, #015874);
+  background-size: 400% 400%;
+  animation: Gradient 3s infinite linear;
 }
 .icon-next {
   position: relative;
@@ -309,6 +312,9 @@ header.fixed-header .navbar-nav .nav-link {
 .banner_section button.btn.main_button {
   color: #fff;
   background: #000;
+  background: linear-gradient(-45deg, #0c3730, #015874, #3a500a, #0c3730, #015874);
+  background-size: 400% 400%;
+  animation: Gradient 3s infinite linear;
 }
 .banner_section .right_form .form-control::placeholder {
   color: #000000;
@@ -1281,9 +1287,8 @@ footer .inner-footer-bottom p a {
   }
   .mobile-section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
-    padding: 0rem 1rem;
   }
   .overview::after {
     font-size: 40px;
@@ -1612,4 +1617,32 @@ footer .inner-footer-bottom p a {
   .mobile-view {
     display: flex !important;
   }
+}
+.bg-animation {
+  background: linear-gradient(-45deg, #0c3730, #015874, #3a500a, #0c3730, #015874);
+  background-size: 400% 400%;
+  animation: Gradient 3s infinite linear;
+}
+@keyframes Gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Button hover effect */
+.bg-animation:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling
+.enquire-icon, .whatsapp-icon {
+  width: 24px;
+  height: 24px;
+} */
+
+/* Responsive adjustments */
+.bg-animation {
+  font-size: 14px;
+  padding: 8px 20px;
 }

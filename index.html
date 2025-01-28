@@ -146,7 +146,7 @@
                         <li><img src="images/check1.png"> <span> Save Big on Your Dream Home</span> </li>
                         <li><img src="images/check1.png"> <span> 100% Refundable EOI - ₹2.07 Lac* </span> </li>
                     </ul>
-                    <div class="banner_btn">
+                    <div class="banner_btn ">
                         <button type="button" data-toggle="modal" data-target="#exampleModal1"> Know More
                             <i class="icon-next"></i>
                         </button>
@@ -418,9 +418,9 @@
                         <!-- <a href="images/floor-plan/masterplan.webp" class="with-caption image-link" title="Floor Plan"> -->
                             <img src="images/masterplan.webp" style="filter: blur(5px);">
                         <!-- </a> -->
-                        <button class="title" style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%); border: 0;" data-toggle="modal" data-target="#exampleModal1">View Plan</button>
+                        <button class="title "  style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%); border: 0;" data-toggle="modal" data-target="#exampleModal1">View Plan</button>
                     </div>
-                    <h4 class="title">Master Plan</h4>
+                    <h4 class="title bg-animation">Master Plan</h4>
                 </div>
             </div>
             <div class="col-lg-4">
@@ -428,10 +428,10 @@
                     <div class="img_sec" style="position: relative;">
                         <!-- <a href="images/floor-plan/floorplan.webp" class="with-caption image-link" title="Floor Plan"> -->
                             <img src="images/floorplan.webp" style="filter: blur(5px);">
-                            <button class="title" style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%); border: 0;" data-toggle="modal" data-target="#exampleModal1">View Plan</button>
+                            <button class="title " style="position: absolute; top: 50%;left: 50%; transform: translate(-50%, -50%); border: 0;" data-toggle="modal" data-target="#exampleModal1">View Plan</button>
                         <!-- </a> -->
                     </div>
-                    <h4 class="title">3 BHK</h4>
+                    <h4 class="title bg-animation">3 BHK</h4>
                 </div>
             </div>
 
@@ -749,7 +749,7 @@
                                 <input type="text" class="form-control" placeholder="Enter Message" name="number" id="qMessage3">
                             </div> -->
                             <div class="form-group">
-                                <button class="btn main_button" id="SubmitQuery3" type="submit">Submit Now </button>
+                                <button class="btn main_button bg-animation"  id="SubmitQuery3" type="submit">Submit Now </button>
                             </div>
                             <div class="inp-box" style="display: flex;align-items: flex-start;">
                                 <input type="checkbox" checked="">
@@ -806,17 +806,24 @@
 
     <!-- mobile section -->
     <div class="mobile-section">
-        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" class="btn enquire-btn" title="Enquire Now">
-        <img src="images/mail.png" alt="Mail Icon" class="enquire-icon">
-        Enquire Now
-    </a>
+        <!-- Enquire Now Button -->
+        <a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal1" class="btn enquire-btn bg-animation" title="Enquire Now">
+            <img src="images/mail.png" alt="Mail Icon" class="icon enquire-icon">
+            Enquire
+        </a>
 
-
-        <a href="https://api.whatsapp.com/send?phone=+918624916245&text=Hello, Looking for Lodha Wakad, Pune. Get in touch with me my name is" class="btn whatsapp-btn">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+        <!-- WhatsApp Button -->
+        <a href="https://api.whatsapp.com/send?phone=+918624916245&text=Hello, Looking for Lodha Wakad, Pune. Get in touch with me my name is" class="btn whatsapp-btn bg-animation">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="icon whatsapp-icon">
             WhatsApp
         </a>
-    </div>
+
+        <!-- Call Button -->
+        <a href="tel:+919958845444" class="btn call-btn bg-animation">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR839vjUVBO4ShYFc1dt5o36u-JaOoPxov-Cw&s" alt="Call Icon" class="icon whatsapp-icon call-icon">
+            Call Now
+        </a>
+</div>
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -831,31 +838,33 @@
                 <div class="modal-body">
                     <p class="text-center modal-title-p">Register Here And Avail The Best Offers!!</p>
                     <div class="form_section">
-                        <div class="form-group">
-                            <input type="text" class="form-control form-control-modal" placeholder="Name" name="name" id="qSenderName1">
-                        </div>
-
-                        <div class="form-group">
-                            
-                            <div class="input-group">
-                                <span class="input-group-text input-group-text-num">
-                                    <img src="https://flagcdn.com/w40/in.png" class="input-group-text-img" width="20" alt="India Flag">
-                                    +91
-                                </span>
-                                <input type="tel" class="form-control form-control-modal " placeholder="86249 16245" name="number" id="qMobileNo1">
+                        <form id="form" method="POST"> 
+                            <div class="form-group">
+                                <input type="text" class="form-control form-control-modal" placeholder="Name" name="Name" id="qSenderName1">
                             </div>
-                        </div>
 
-                        <div class="form-group">
-                            
-                            <input type="email" class="form-control form-control-modal " placeholder="Email" name="email" id="qEmailID1">
-                        </div>
+                            <div class="form-group">
+                                
+                                <div class="input-group">
+                                    <span class="input-group-text input-group-text-num">
+                                        <img src="https://flagcdn.com/w40/in.png" class="input-group-text-img" width="20" alt="India Flag">
+                                        +91
+                                    </span>
+                                    <input type="tel" class="form-control form-control-modal " placeholder="86249 16245" name="Number" id="qMobileNo1">
+                                </div>
+                            </div>
 
-                        <p class="text-center small">
-                            This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
-                        </p>
+                            <div class="form-group">
+                                
+                                <input type="email" class="form-control form-control-modal " placeholder="Email" name="Email" id="qEmailID1">
+                            </div>
 
-                        <button class="btn btn-block" style="background-color: #a58d4a; color: white;" id="SubmitQuery1">Enquire Now</button>
+                            <p class="text-center small">
+                                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
+                            </p>
+
+                            <button class="btn btn-block bg-animation"type="submit" style="background-color: #a58d4a; color: white;" id="SubmitQuery1">Enquire Now</button>
+                        </form>
                         <div class="text-center mt-3">
                             <p>or</p>
                                 <a class="whats-pt0 countWhatsApp zoomIn" id="whatsappClick" 
@@ -1174,6 +1183,61 @@
 
 </script>
 <script defer="" src="js/slide-to-submit.js"></script>
+<script>
+      document.getElementById("form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent the default form submission
+        //document.getElementById("message").textContent = "Submitting..";
+       // document.getElementById("message").style.display = "block";
+        document.getElementById("SubmitQuery1").disabled = true;
+
+        // Collect the form data
+        var formData = new FormData(this);
+        var keyValuePairs = [];
+        for (var pair of formData.entries()) {
+          keyValuePairs.push(pair[0] + "=" + pair[1]);
+        }
+
+        var formDataString = keyValuePairs.join("&");
+        //console.log(formDataString);
+        // Send a POST request to your Google Apps Script
+        fetch(
+          "https://script.google.com/macros/s/AKfycbxEOZXkVxNFU4K7arHRn6QpeFM3QFDpYyfU-4Y9lNYiyT_CqpjxcC64xFNFSMUWM4y4/exec",
+          {
+            redirect: "follow",
+            method: "POST",
+            body: formDataString,
+            headers: {
+              "Content-Type": "text/plain;charset=utf-8",
+            },
+          }
+        )
+          .then(function (response) {
+            // Check if the request was successful
+            if (response) {
+              return response; // Assuming your script returns JSON response
+            } else {
+              throw new Error("Failed to submit the form.");
+            }
+          })
+          .then(function (data) {
+            // Display a success message
+            //document.getElementById("message").textContent =
+              alert("Data submitted successfully!")
+            //document.getElementById("message").style.display = "block";
+            //document.getElementById("message").style.backgroundColor = "green";
+            //document.getElementById("message").style.color = "beige";
+            document.getElementById("SubmitQuery1").disabled = false;
+            document.getElementById("form").reset();
+          })
+          .catch(function (error) {
+            // Handle errors, you can display an error message here
+            console.error(error);
+            //document.getElementById("message").textContent =
+              alert("An error occurred while submitting the form.")
+            //document.getElementById("message").style.display = "block";
+          });
+      });
+    </script>
 
 
 
