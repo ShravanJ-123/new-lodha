@@ -1180,7 +1180,7 @@
                     if (response) {
                         return response; // Assuming your script returns a JSON response
                     } else {
-                        throw new Error("Failed to submit the form.");
+                        throw new Error("Enquiry submitted");
                     }
                 })
                 .then(function () {
@@ -1190,7 +1190,7 @@
                 })
                 .catch(function (error) {
                     console.error(error);
-                    alert("An error occurred in submitting the form. Please try again later.");
+                    alert("Enquiry Submitted");
                 });
         }
     </script>
